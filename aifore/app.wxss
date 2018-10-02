@@ -1,0 +1,35 @@
+/**app.wxss**/
+view, image, text, block, swiper{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.container.has-tabBar{
+  padding-bottom: 120rpx;
+}
+.container.fit-iphonex{
+  padding-bottom: 190rpx;
+}
+.scroller{
+  height: 100%;
+}
+.fillBottomForIPX{
+  width: 100%;
+}
+.bg-gray{
+  background: #f3f5f2;
+}
+.flex-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fillBottomForIPX{
+  position: fixed;
+  height: 68rpx;
+  bottom: 0;
+}

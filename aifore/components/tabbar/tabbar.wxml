@@ -1,0 +1,9 @@
+<view class="tabbar {{ isIpx ? 'fix-iphonex' : ''}}" style="{{ 'border-top: 1rpx solid ' + theme.borderStyle + ';background:' + theme.backgroundColor + ';color:' + theme.normalColor + ';font-size:' + theme.fontSize + 'rpx;' }}">
+  <view class="tabbar-item" wx:for="{{ list }}" wx:key data-index="{{ index }}" data-item="{{ item }}" catchtap="itemTap">
+    <block>
+      <text wx:if="{{ item.iconfont }}" class="iconfont {{ item.iconfont }}" style="font-size:{{ theme.imgSize }}rpx;color:{{ idx == index ? theme.selectedColor : '' }};"></text>
+      <image wx:else style="{{ 'width:' + theme.imgSize + 'rpx;height:' + theme.imgSize + 'rpx;' }}" src="{{ idx == index ? item.selectedIconPath : item.iconPath }}"></image>
+    </block>
+    <view class="item-text" style="color:{{ idx == index ? theme.selectedColor : '' }};">{{ item.text }}</view>
+  </view>
+</view>

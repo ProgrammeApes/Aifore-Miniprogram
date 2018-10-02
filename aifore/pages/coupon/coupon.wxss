@@ -1,0 +1,38 @@
+/* pages/coupon/coupon.wxss */
+.scroller{
+  background: #f3f5f2;
+}
+.wrapper{
+  padding: 20rpx;
+}
+.item-content{
+  position: relative;
+  height: 220rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  padding: 26rpx 30rpx;
+}
+.item-content>.top{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.item-content>.top image{
+  margin-right: 14rpx;
+}
+.item-content .shop-name{
+  font-size: 22rpx;
+  color: #646464;
+  margin-bottom: 22rpx;
+}
+.item-content .coupon-name{
+  font-size: 36rpx;
+  color: #282828;
+}
+.item-content .btn-use{
+  position: absolute;
+  right: 38rpx;
+  font-size: 22rpx;
+  bottom: 26rpx;
+  color: #646464;
+}

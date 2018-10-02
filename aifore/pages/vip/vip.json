@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "vip",
+  "usingComponents": {
+    "tabbar": "../../components/tabbar/tabbar"
+  }
+}

@@ -1,0 +1,108 @@
+<!--pages/health/health.wxml-->
+<view class="container {{ isIpx ? 'fit-iphonex' : '' }}">
+    <view class='listItem'>
+      <view class='itemContent' wx:for='{{5}}' wx:key='{{index}}'>
+        <view class='fractionView'>
+          <view class='fractionItem'>
+            <view class='fractionText'>健康指数</view>
+            <view class='fractionBox'>
+              <image src='../../static/img/fractionBack.png' class='fractionBack'></image>
+              <view class='fractionNum'>97</view>
+            </view>
+          </view>
+          <view class='fractionItem'>
+            <view class='fractionText'>健康评分</view>
+            <view class='fractionBox'>
+              <image src='../../static/img/fractionBack.png' class='fractionBack'></image>
+              <view class='fractionNum'>97</view>
+            </view>
+          </view>
+        </view>
+        <view class='recordBox'>
+          <view class='BMIbox'>
+            <view class='recordTitle'>
+              <view class='shuxian'></view>
+              <view>BMI</view>
+            </view>
+            <view class='recordDetail'>
+              <view class='recordTextBox'>
+                <view style='flex: 2'>偏轻</view>
+                <view style='flex: 2'>健康</view>
+                <view style='flex: 2'>超重</view>
+                <view style='flex: 4'>肥胖</view>
+              </view>
+              <view class='recordProgressBox'>
+                <view class='progress'>
+                  <view class='progressBack'>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>11</text>
+                    </view>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>24</text>
+                    </view>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>28</text>
+                    </view>
+                    <view style='flex:4;'></view>
+                  </view>
+                  <view class='progressActive' style='width:10%;'>
+                    <text class='BMInum'>9</text>
+                    <view class='BMInumSpan'>
+                      <image style='width:100%;height:100%;' src='../../static/img/BMInumBox.png'></image>
+                      <view class='BMInumSpanText'>22</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='BMIbox TZbox'>
+            <view class='recordTitle'>
+              <view class='shuxian'></view>
+              <view>体脂率</view>
+            </view>
+            <view class='recordDetail'>
+              <view class='recordProgressBox'>
+                <view class='progress'>
+                  <view class='progressBack'>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>11</text>
+                    </view>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>24</text>
+                    </view>
+                    <view style='flex:2;'>
+                      <text class='BMInumFix'>28</text>
+                    </view>
+                    <view style='flex:4;'></view>
+                  </view>
+                  <view class='progressActive' style='width:10%;'>
+                    <text class='BMInum'>9</text>
+                    <view class='BMInumSpan'>
+                      <image style='width:100%;height:100%;' src='../../static/img/TZnumBox.png'></image>
+                      <view class='BMInumSpanText'>22</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view class='recordTextBox'>
+                <view style='flex: 2'>瘦</view>
+                <view style='flex: 2'>偏瘦</view>
+                <view style='flex: 2'>微胖</view>
+                <view style='flex: 4'>肥胖</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='itemBottom'>测试时间：2018.8.3  8:00</view>
+      </view>
+      <view class="flex-box itemContent add-area">
+        <image src="../../static/img/btn-add.png" class="btn-add" mode="widthFix"></image>
+      </view>
+    </view>
+    
+</view>
+<block>
+  <tabbar idx="2" theme="{{ tabbarData.theme }}" list="{{ tabbarData.list }}"></tabbar>
+  <view class="{{ isIpx ? 'fillBottomForIPX' : '' }}" style="background:{{ tabbarData.theme.backgroundColor }}"></view>
+</block>

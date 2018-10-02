@@ -1,0 +1,50 @@
+/* pages/productList/productList.wxss */
+.list-content{
+  margin-bottom: 15rpx;
+  padding: 20rpx 42rpx;
+  background: #fff;
+}
+.list-content>.top-box{
+  padding-bottom: 22rpx;
+  border-bottom: 1rpx solid #d5d5d5;
+}
+.list-content .shop-name{
+  font-size: 22rpx;
+  color: #6B6B6B;
+}
+.list-content .order-status{
+  font-size: 26rpx;
+  color: #000;
+}
+.list-content .content-box{
+  padding-top: 22rpx;
+  min-height: 142rpx;
+  align-items: flex-start;
+}
+.list-content .content-box .left-box{
+  width: 50%;
+}
+.list-content .content-box .right-box{
+  max-width: 28%;
+}
+.list-content .content-box .ware-name{
+  font-size: 28rpx;
+  color: #2D2D2D;
+  width: 70%;
+}
+.list-content .content-box .ware-spec{
+  font-size: 22rpx;
+  color: #757575;
+}
+.list-content .content-box .content{
+  margin-bottom: 22rpx;
+}
+.list-content .timer{
+  font-size: 24rpx;
+  color: #8E8C8B;
+}
+.list-content .btn-cancel{
+  border-bottom: 1rpx solid #bcbcbc;
+  font-size: 25rpx;
+  color: #3C3C3C;
+}

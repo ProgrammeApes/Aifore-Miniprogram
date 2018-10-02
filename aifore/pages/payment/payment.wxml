@@ -1,0 +1,36 @@
+<scroll-view class="container orderDetail">
+  <view class="address-box">
+    <view class="title-box">北京康茶主义茶饮</view>
+    <view class="desc-box">丰台区汽车博物馆东路1号院诺德中心2期7号楼一楼</view>
+  </view>
+  <view class="flex-box payment-box">
+    <image src="../../static/img/gou.png" mode="widthFix"></image>
+    <view class="text">微信支付</view>
+  </view>
+  <view class="order-list">
+    <view class="top-box" hidden = "true">
+      <view class="item-content" wx:for="{{2}}" wx:key >
+        <view class="name">金桔柠檬水</view>
+        <view class="flex-box desc">
+          <view class="cup">
+            <text class="dot"></text>大杯
+          </view>
+          <view class="money">￥14</view>
+          <view class="flex-box stepper">
+            <view class="btn btn-min">-</view>
+            <view class="value">12</view>
+            <view class="btn btn-add">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bottom-box">
+      <view class="flex-box" style="height:70rpx;">
+        <view class="tips">合计</view>
+        <view class="sum">￥{{aCost}}</view>
+      </view>
+      <view class="tips-text">注:本产品现制现售，不适用退货服务</view>
+    </view>
+  </view>
+</scroll-view>
+<view class="btn-cancel" >支付</view>
