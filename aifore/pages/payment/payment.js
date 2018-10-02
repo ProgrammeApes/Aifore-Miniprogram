@@ -20,6 +20,7 @@ Page({
     this.setData({
         aCount: aCount,
         aCost: aCost,
+
     })
 
   },
