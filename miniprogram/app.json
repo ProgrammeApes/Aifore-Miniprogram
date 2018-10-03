@@ -12,7 +12,9 @@
 		"pages/coupon/coupon",
 		"pages/recommend/recommend",
 		"pages/healthReport/healthReport",
-		"pages/health/health"
+		"pages/health/health",
+    "pages/point/point",
+    "pages/userInfo/userInfo"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
