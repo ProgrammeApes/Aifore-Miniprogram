@@ -1,43 +1,53 @@
-<!--index.wxml-->
-<view class="container">
-
-  <!-- 用户 openid -->
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-    ></button>
-    <view>
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+<import src="../../components/tabbar/tabbar.wxml"/>
+<view class="container {{ isIpx ? 'fit-iphonex' : '' }}">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+      <swiper-item wx:for="{{imgList}}" wx:key>
+        <image src="{{item}}" class="img" mode="aspectFit"></image>
+      </swiper-item>
+  </swiper>
+  <view class="tab-container">
+    <view class="top-box">
+      <navigator class="tab small-height" hover-class="none" style='flex:1; margin-right:10rpx;' url="../order/order">
+        <image src="../../static/img/diandan.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+        <view class="tab-text">点单</view>
+      </navigator>
+      <navigator class="tab deep-green small-height" hover-class="none" url="../recommend/recommend">
+        <image src="../../static/img/tuijian.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+        <view class="tab-text">推荐</view>
+      </navigator>
+    </view>
+    <view class="flex-box down-box">
+      <view class="flex-box left-box" style="flex:2; flex-wrap: wrap; margin-right:10rpx;">
+        <navigator class="tab small-height" hover-class="none" style="margin-bottom:10rpx;" url="../productList/productList">
+          <image src="../../static/img/dingdan.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+          <view class="tab-text">订单</view>
+        </navigator>
+        <navigator class="tab small-height easy-green" hover-class="none" style="margin-bottom:10rpx;" url="../health/health">
+          <image src="../../static/img/jiankangbaogao.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+          <view class="tab-text">健康报告</view>
+        </navigator>
+        <navigator class="tab small-height easy-green" hover-class="none">
+          <image src="../../static/img/jifen.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+          <view class="tab-text">积分</view>
+        </navigator>
+        <navigator class="tab small-height deep-green" hover-class="none">
+          <image src="../../static/img/gerenxinxi.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
+          <view class="tab-text">个人信息</view>
+        </navigator>
+      </view>
+      <view class="right-box" style="flex:1;"></view>
+      <view style="height:100%;" class="vip">
+        <navigator class="tab easy-green small-height" hover-class="none" style="height: 100%;" url="../vip/vip">
+          <image src="../../static/img/vip.png" style="width:87rpx; height:83rpx;" mode="aspectFit"></image>
+          <view class="tab-text">VIP</view>
+        </navigator>
+      </view>      
     </view>
   </view>
-
-
-  <!-- 上传图片 -->
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view>
-
-
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
-
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
+  <block>
+    <tabbar idx="0" theme="{{ tabbarData.theme }}" list="{{ tabbarData.list }}"></tabbar>
+    <view class="{{ isIpx ? 'fillBottomForIPX' : '' }}" style="background:{{ tabbarData.theme.backgroundColor }}"></view>
+  </block>
 
 </view>

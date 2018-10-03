@@ -1,0 +1,49 @@
+<view class="container">
+  <scroll-view class="scroller" scroll-y>
+    <view class="coupon-box">
+      <view class="left-bar">
+        <view class="dot"></view>
+      </view>
+      <view class="coupon-text">
+        <view class="coupon-title">金桔柠檬（1杯）</view>
+        <view class="coupon-price">
+          <text class="price">￥11.5</text>
+          <text class="old-price">原价￥11.5</text>
+        </view>
+      </view>
+      <view class="tag">
+        <image src="../../static/img/tag.png" mode="widthFix"></image>
+        <view class="text">
+          <view class="point">45</view>
+          <view>积分</view>
+        </view>
+      </view>
+      <image src="../../static/img/couponImg.png" mode="widthFix" class="coupon-img"></image>
+    </view>
+    <view class="content-box">
+      <view class="flex-box">
+        <view class="title">优惠说明</view>
+        <view class="content">可到指定餐厅柜台使用45积分兑换金桔柠檬 （1杯）</view>
+      </view>
+      <view class="flex-box">
+        <view class="title">有效期限</view>
+        <view class="content">领取优惠券之日起的7日内有效（含本日）</view>
+      </view>
+      <view class="flex-box">
+        <view class="title">可用时段</view>
+        <view class="content">周一至周日10：30—21：00</view>
+      </view>
+      <view class="flex-box">
+        <view class="title">适用门店</view>
+        <view class="content">北京丰台区诺德中心店</view>
+      </view>
+      <view class="flex-box">
+        <view class="title">使用须知</view>
+        <view class="content">
+        本优惠券可以与餐厅其他优惠券同时使用；本优惠券食品以实物为准，所示图片仅供参考；本优惠券仅限指定门店使用，具体以店内公示为准。
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="btn-use">立即兑换</view>
+</view>

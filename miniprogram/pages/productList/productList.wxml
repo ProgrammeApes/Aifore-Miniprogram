@@ -1,0 +1,23 @@
+<view class="container bg-gray">
+  <scroll-view scroll-y class="scroller">
+    <navigator class="list-content" wx:for="{{5}}" url='../orderDetail/orderDetail' hover-class='none'>
+      <view class="flex-box top-box">
+        <view class="shop-name">北京康茶主义</view>
+        <view class="order-status">等待付款</view>
+      </view>
+      <view class="flex-box content-box">
+        <view class="left-box">
+          <view class="flex-box content" wx:for="{{5}}">
+            <view class="ware-name">金桔柠檬水</view>
+            <view class="ware-spec">大杯</view>
+          </view>
+        </view>
+        <view class="right-box">￥26</view>
+      </view>
+      <view class="flex-box bottom-box">
+        <view class="timer">2018-07-21 12:05:55</view>
+        <view class="btn-cancel">取消订单</view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

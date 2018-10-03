@@ -1,0 +1,17 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="container">
+  <scroll-view class="scroller" scroll-y>
+    <view class="wrapper">
+      <navigator class="item-content" wx:for="{{20}}" wx:key url="../couponDetail/couponDetail" hover-class='none'>
+        <view class="flex-box top">
+          <image src="../../static/img/logo.png" style="width:78rpx;" mode="widthFix"></image>
+          <view class="box">
+            <view class="shop-name">北京康茶主义茶饮店</view>
+            <view class="coupon-name">花生红豆红茶</view>
+          </view>
+        </view>
+        <view class="btn-use">立即使用>></view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>

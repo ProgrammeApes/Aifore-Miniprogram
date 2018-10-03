@@ -1,0 +1,5 @@
+/* 引入iconfont */@import '/app.wxss';
+.tabbar 
+{width:100%;height:118rpx;position:fixed;bottom:0;display:flex;justify-content:space-around;align-items:center;text-align:center;line-height:1.4; padding-top: 18rpx;}
+.fix-iphonex {bottom:68rpx !important;}
+.tabbar-item {flex:1;}

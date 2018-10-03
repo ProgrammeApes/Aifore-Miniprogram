@@ -1,0 +1,41 @@
+<view class="container vip-container has-tabBar {{ isIpx ? 'fit-iphonex' : '' }}">
+  <view class="card-box">
+    <image src="../../static/img/vip-card.png" mode="widthFix"></image>
+    <view class="top-box">
+      <view class="top">
+        <view class="user-name">XXXXXXXX</view>
+        <view class="flex-box point">
+          <view class="text">累计积分{{point}}</view>
+          <image style='width:10rpx;' src="../../static/img/black-arrow.png" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="down">
+        <view class="flex-box can-use-point">
+          <view class="text">可用积分{{canUsePoint}}</view>
+          <image style='width:10rpx;' src="../../static/img/black-arrow.png" mode="widthFix"></image>
+        </view>
+        <view class="tips">进入积分商城兑换优惠券</view>
+      </view>
+    </view>
+  </view>
+  <view class="flex-box main-wrapper">
+    <view class="content" style="margin-right:168rpx;">
+      <view class="title">可用积分</view>
+      <view class="text">{{canUsePoint}}</view>
+    </view>
+    <navigator class="content" url="../coupon/coupon" hover-class='none'>
+      <view class="title">优惠券</view>
+      <view class="text">{{couponNum}}<text>张</text></view>
+    </navigator>
+  </view>
+  <view class="list-content">
+    <view class="flex-box list {{index <= 0 ? 'has-top' : ''}}" wx:for="{{downList}}" wx:key>
+      <view class="title">{{item}}</view>
+      <image src="../../static/img/arrow.png" mode="widthFix" style="width:13rpx;"></image>
+    </view>
+  </view>
+  <block>
+    <tabbar idx="3" theme="{{ tabbarData.theme }}" list="{{ tabbarData.list }}"></tabbar>
+    <view class="{{ isIpx ? 'fillBottomForIPX' : '' }}" style="background:{{ tabbarData.theme.backgroundColor }}"></view>
+  </block>
+</view>

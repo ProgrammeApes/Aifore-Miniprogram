@@ -10,7 +10,7 @@
 		"nodeModules": true
 	},
 	"appid": "wx57bfebfb3be95678",
-	"projectname": "newaifore",
+	"projectname": "aifore",
 	"libVersion": "2.3.0",
 	"condition": {
 		"search": {

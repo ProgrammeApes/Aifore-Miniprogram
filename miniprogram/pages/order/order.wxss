@@ -1,0 +1,194 @@
+/* pages/order/order.wxss */
+.container{
+  position: relative;
+  background: #f3f5f2;
+  padding-top: 556rpx;
+  padding-bottom: 230rpx;
+}
+.container.fit-iphonex{
+  padding-bottom: 306rpx;
+}
+.container.fit-iphonex .bottom-box{
+  bottom: 190rpx;
+}
+.banner-box{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  border-bottom: 1rpx solid #f3f5f2;
+}
+.banner{
+  position: relative;
+  width: 98%;
+  left: 1%;
+  margin-bottom: 35rpx;
+}
+.top-bar{
+  position: relative;
+  height: 120rpx;
+  padding-left: 34rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-top: 1rpx solid #f3f5f2;
+  /* box-shadow: 2rpx 10rpx 2rpx rgba(0, 0, 0, 1) */
+}
+.top-bar .icon-box{
+  width: 20%;
+  font-size: 26rpx;
+  color: #000;
+  border-left: 4rpx solid #dfe0de;
+}
+.top-bar .icon-box>image{
+  margin: 0 auto 14rpx auto;
+  display: block;
+}
+.top-bar .icon-box>.text{
+  text-align: center;
+}
+.top-bar .address-box{
+  flex: 1;
+  font-size: 28rpx;
+}
+.top-bar .address-box .title-box{
+  color: #000;
+  margin-bottom: 10rpx;
+}
+.top-bar .address-box .address{
+  font-size: 24rpx;
+  color: #666;
+}
+.main-wrapper{
+  height: 100%;
+  /* padding-bottom: 120rpx; */
+  justify-content: flex-start;
+}
+.main-wrapper .left-box{
+  width: 122rpx;
+}
+.main-wrapper .new-icon{
+  width: 70rpx;
+  /* margin-bottom: 17rpx; */
+  margin: 0 auto 17rpx auto;
+  display: block;
+}
+.main-wrapper .left-box .text{
+  font-size: 28rpx;
+  width: 56rpx;
+  margin: 0 auto;
+}
+.main-wrapper .left-box .item-content.choosed .text{
+  color: #7CB342;
+}
+.main-wrapper .left-box .item-content{
+  position: relative;
+  padding: 10rpx 12rpx;
+  margin-bottom: 5rpx;
+  background: #fff;
+}
+.main-wrapper .left-box .item-content.choosed{
+  background: #f3f5f2;
+}
+.main-wrapper .left-box .item-content.choosed::after{
+  position: absolute;
+  content: "";
+  width: 10rpx;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #9ccc65;
+}
+.main-wrapper .right-box .item-content{
+  position: relative;
+  width: 92%;
+  border-radius: 10rpx;
+  background: #fff;
+  height: 310rpx;
+  margin: 0 auto 20rpx auto;
+  box-shadow: 0rpx 10rpx 20rpx rgba(0,0,0,.08);
+  padding-top: 35rpx;
+}
+.main-wrapper .right-box{
+  padding-top: 16rpx;
+}
+.main-wrapper .right-box .icon-box{
+  position: absolute;
+  left: 14rpx;
+  top: 7rpx;
+}
+.main-wrapper .right-box .icon-box .icon{
+  width: 50rpx;
+}
+.ware-content{
+  justify-content: flex-end;
+  padding-right: 36rpx;
+}
+.ware-content .shop-img{
+  width: 104rpx;
+  margin-right: 89rpx;
+}
+.ware-content .shop-name{
+  font-size: 34rpx;
+  color: #000;
+  margin-bottom: 20rpx;
+}
+.ware-content .shop-name .shop-mes{
+  text-align: right;
+}
+.ware-content .price-box{
+  color: #7cb342;
+  font-size: 43rpx;
+  text-align: right;
+  margin-bottom: 24rpx;
+}
+
+.ware-content .tips-box{
+  margin-bottom: 20rpx;
+  justify-content: flex-end;
+}
+.ware-content .tips-box .tips{
+  font-size: 35rpx;
+  color: #7cb342;
+  margin-right: 20rpx;
+}
+
+.ware-content .tips-box .btn{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.ware-content .tips-box .stepper{
+  font-size: 35rpx;
+  color: #7cb342;
+}
+.ware-content .step-box{
+  overflow: hidden;
+}
+.ware-content .tips-box .stepper .value{
+  width: 48rpx;
+  text-align: center;
+  color: #000;
+}
+.bottom-box{
+  position: absolute;
+  bottom: 118rpx;
+  width: 100%;
+}
+.bottom-box>.price-bar{
+  position: relative;
+  height: 38rpx;
+  background: rgba(156, 204, 101, .6);
+  text-align: center;
+  font-size: 28rpx;
+  color: #252525;
+}
+.bottom-box>.price-bar>text{
+  color: #fff;
+  margin: 0 10rpx;
+}
+.bottom-box>.btn{
+  height: 75rpx;
+  background: #88bc4c;
+  text-align: center;
+  color: #fff;
+  line-height: 75rpx;
+}

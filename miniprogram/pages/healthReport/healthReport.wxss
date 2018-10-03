@@ -1,0 +1,351 @@
+/* pages/healthReport/healthReport.wxss */
+.header {
+  width: 100%;
+  height: 540rpx;
+  position: relative;
+  color: #fff;
+}
+.fenBox {
+  position: absolute;
+  top: 192rpx;
+  right: 283rpx;
+  font-size: 28rpx;
+}
+.headerView {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  line-height: 1;
+}
+.fenNum {
+  font-size: 100rpx;
+  font-weight: 800;
+  top: 210rpx;
+}
+.headerText {
+  font-size: 28rpx;
+  color: #e4f1d9;
+  top: 336rpx;
+}
+.headerTime {
+  font-size: 24rpx;
+  color: #fff;
+  bottom: 36rpx;
+}
+.pointerBox {
+  width: 26rpx;
+  height: 520rpx;
+  top: 55rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -13rpx;
+  transform: rotate(0deg);
+}
+.pointer {
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:0 0 25rpx 5rpx #fff;
+}
+
+.healthHeader {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  text-align: center;
+  font-size: 32rpx;
+  color: #999999;
+}
+.healthHeader text {
+  padding: 0 10rpx;
+  line-height: 95rpx;
+  border-bottom: 4rpx solid #9ccc65;
+  display: inline-block;
+}
+
+.BMIboxWrap {
+  width: 100%;
+  height: 290rpx;
+  position: relative;
+}
+.BMIboxTitle {
+  position: relative;
+  height: 120rpx;
+}
+.recordTitle2 {
+  height: 60rpx;
+  position: absolute;
+  top: 62rpx;
+  left: 32rpx;
+}
+.recordTitle2 .text {
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  color: #333;
+  font-size: 32rpx;
+  line-height: 1;
+  width: 150rpx;
+}
+.recordTitle2 .shuxian {
+  width: 8rpx;
+  background: #7ec2f3;
+  height: 38rpx;
+  margin-right: 10rpx;
+}
+.BMIboxTitle .recordNum {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  font-size: 54rpx;
+  top: 60rpx;
+  line-height: 1;
+}
+.BMIboxTitle .statusText {
+  position: absolute;
+  left: 426rpx;
+  top: 40rpx;
+  line-height: 1;
+  color: #999;
+  font-size: 24rpx;
+}
+.wenhao {
+  position: absolute;
+  top: 30rpx;
+  right: 42rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+/* 健康评价 */
+.yuanBox {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rpx;
+}
+.yuanBox view {
+  margin: 0 5rpx;
+  border-radius: 50%;
+  background: #9ccc65;
+}
+.yuanBox .yuan1 {
+  width: 10rpx;
+  height: 10rpx;
+}
+.yuanBox .yuan2 {
+  width: 25rpx;
+  height: 25rpx;
+}
+.yuanBox .yuan3 {
+  width: 75rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+.pingjiBox {
+  height: 60rpx;
+  width: 100%;
+  padding: 0 30rpx;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.pingjiBox view {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 健康评价 */
+/* BMI box */
+.BMIbox {
+  width: 100%;
+  height: 178rpx;
+  position: relative;
+}
+.BMIbox .recordTitle {
+  height: 38rpx;
+  position: absolute;
+  top: 42rpx;
+  left: 18rpx;
+  display: flex;
+}
+.BMIbox .recordTitle view {
+  height: 38rpx;
+  line-height: 38rpx;
+  color: #333;
+  font-size: 24rpx;
+}
+.BMIbox .recordTitle .shuxian {
+  width: 8rpx;
+  background: #7ec2f3;
+  height: 38rpx;
+  margin-right: 10rpx;
+}
+.BMIbox .recordDetail {
+  width: 510rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 110rpx;
+  top: 0;
+}
+.BMIbox .recordTextBox {
+  width: 100%;
+  height: 55rpx;
+  display: flex;
+}
+.BMIbox .recordTextBox view {
+  text-align: center;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 55rpx;
+}
+.BMIbox .recordProgressBox {
+  width: 100%;
+  height: 67rpx;
+  position: relative;
+}
+.BMIbox .progress {
+  position: absolute;
+  left: 0;
+  bottom: 5rpx;
+  width: 100%;
+  height: 10rpx;
+  border-radius: 5rpx;
+}
+.BMIbox .progressBack {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #e7f5ff;
+  height: 10rpx;
+  display: flex;
+  border-radius: 5rpx;
+}
+.BMIbox .progressActive {
+  width: 20%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #7ec2f3;
+  height: 10rpx;
+  border-radius: 5rpx;
+}
+.BMIbox .progressBack view {
+  border-left: 1px solid #9dd1f7;
+  height: 10rpx;
+  position: relative;
+}
+.BMIbox .progressBack view:first-child {
+  border-left:0;
+}
+.BMIbox .BMInumFix {
+  position: absolute;
+  bottom: -35rpx;
+  right: 0;
+  color: #999;
+  font-size: 24rpx;
+  transform: translateX(50%);
+}
+.BMIbox .BMInum {
+  position: absolute;
+  left: 50%;
+  bottom: 14rpx;
+  transform: translateX(-50%);
+  color: #999;
+  font-size: 22rpx;
+}
+.BMIbox .BMInumSpan {
+  width: 70rpx;
+  height: 35rpx;
+  position: absolute;
+  bottom: 14rpx;
+  left: 100%;
+}
+.BMIbox .BMInumSpan image {
+  width: 70rpx;
+  height: 35rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0;
+}
+.BMIbox .BMInumSpanText {
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+  width: 70rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+  font-size: 20rpx;
+  z-index: 2;
+}
+/* BMI box */
+/* TZboxWrap 体脂率 */
+.TZboxWrap .shuxian{
+  background: #ffbb4f;
+}
+.TZboxWrap .progressBack {
+  background: #ffeed4;
+}
+.TZboxWrap .progressBack view {
+  border-left-color: #ffbb4f;
+}
+.TZboxWrap .progressActive {
+  background: #ffbb4f;
+}
+/* TZboxWrap 体脂率 */
+.box-shadow-block {
+  box-shadow:0 0 10rpx 2rpx rgba(0, 0, 0,0.2);
+}
+.conclusionBox {
+  width: 680rpx;
+  min-height: 100rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  margin: 44rpx 40rpx 30rpx 30rpx;
+  color: #333;
+  font-size: 26rpx;
+  padding: 30rpx 0;
+}
+.conclusionBox image {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 0 25rpx 0 14rpx;
+  min-width: 48rpx;
+}
+.conclusionBox text {
+  font-size: 30rpx;
+  color: #ff6c47;
+}
+
+.viewCenter {
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.toPlanBox {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toPlan {
+  line-height: 70rpx;
+  padding: 0 56rpx;
+  border: 1rpx solid #7cb342;
+  color: #7cb342;
+  font-size: 28rpx;
+  border-radius: 35rpx;
+}

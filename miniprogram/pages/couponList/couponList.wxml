@@ -1,0 +1,48 @@
+<view class="container">
+  <scroll-view class="scroller" scroll-y>
+    <block wx:for="{{5}}" wx:key>
+      <view class="coupon-box {{index <= 0 ? 'first' : ''}}">
+        <view class="left-bar">
+          <view class="dot"></view>
+        </view>
+        <view class="coupon-text">
+          <view class="coupon-title">金桔柠檬（1杯）</view>
+          <view class="coupon-price">
+            <text class="price">￥11.5</text>
+            <text class="old-price">原价￥11.5</text>
+          </view>
+        </view>
+        <view class="tag">
+          <image src="../../static/img/tag.png" mode="widthFix"></image>
+          <view class="text">
+            <view class="point">45</view>
+            <view>积分</view>
+          </view>
+        </view>
+        <image src="../../static/img/couponImg.png" mode="widthFix" class="coupon-img"></image>
+        <view class="flex-box btn-box">
+          <navigator class="btn first" hover-class='none' url="../couponDetail/couponDetail">查看详情</navigator>
+          <navigator class="btn" hover-class='none'>立即兑换</navigator>
+        </view>
+      </view>
+      <view class="line-box">
+        <view class="dot"></view>
+        <view class="line"></view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="bottom-box flex-box">
+    <view class="point-box">
+      <view class="point">
+        <text>120</text>积分
+      </view>
+    </view>
+    <view class="flex-box right-box">
+      <image src="../../static/img/avatar.png" mode="aspectFit" class="avatar"></image>
+      <navigator class="flex-box text" hover-class='none'>
+        <view class="text" style="margin-right:14rpx;">个人中心</view>
+        <image src="../../static/img/black-arrow.png" class="icon" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
