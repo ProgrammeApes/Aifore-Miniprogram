@@ -1,1 +1,37 @@
-123
+<view class="container">
+    <scroll-view class="scroller" scroll-y>
+        <view class="coupon-box">
+            <view class="left-bar">
+                <view class="dot"></view>
+            </view>
+            <view class="coupon-text">
+                <view class="coupon-title">金桔柠檬（1杯）</view>
+                <view class="coupon-price">
+                    <text class="price">￥11.5</text>
+                    <text class="old-price">原价￥11.5</text>
+                </view>
+                <view class="link-box">
+                    <view class="link">查看详情</view>
+                    <text class="link">   |   </text>
+                    <view class="link">立即兑换</view>
+                </view>
+            </view>
+            <view class="tag">
+                <image src="../../static/img/tag.png" mode="widthFix"></image>
+                <view class="text">
+                    <view class="point">45</view>
+                    <view>积分</view>
+                </view>
+            </view>
+            <image src="../../static/img/couponImg.png" mode="widthFix" class="coupon-img"></image>
+        </view>
+
+    </scroll-view>
+    <view class="bottom-bar">
+        <view class="point-value">0</view>
+        <text id="point">积分</text>
+        <image class="avatar" src="../../static/img/tag.png" ></image>
+        <text id="user">个人中心</text>
+        <image class="arrow" src="../../static/img/black-arrow.png" mode="widthFix" ></image>
+    </view>
+</view>
