@@ -2,7 +2,7 @@
   <image class="bg" src="../../static/img/startTest/test-bg.jpg" mode="widthFix"></image>
   <image class="btn-start" src="../../static/img/startTest/btn-start.png" mode="widthFix"></image>
   <image class="bottom-img" src="../../static/img/startTest/bottom-img.png" mode="widthFix"></image>
-  <view class="btn-update" catchtap='handlePoup'>更新个人信息</view>
+  <view class="btn-update" catchtap=''>更新个人信息</view>
   <view class="tips">请及时更新个人信息以便更准确的测试</view>
   <!-- 弹窗 -->
   <view class="poup-box" wx:if="{{showPoup}}">

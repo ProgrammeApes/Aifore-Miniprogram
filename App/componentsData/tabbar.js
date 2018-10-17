@@ -24,7 +24,7 @@ const data = {
       {
         "selectedIconPath": '../../static/img/tabbar/health-icon-select.png',
         "iconPath": '../../static/img/tabbar/health-icon.png',
-        "pagePath": "pages/startTest/startTest",
+        "pagePath": "pages/health/health",
         "text": "健康"
       },
       {

@@ -7,8 +7,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-		healthRecord:[]
+		healthRecord:[
+			{
+				healthIndex:60,
+				healthScore:70
+			}
+		]
   },
+
+	jumpToTest(){
+		wx.navigateTo({
+			url: '../startTest/startTest',
+			success: function(res) {},
+			fail: function(res) {},
+			complete: function(res) {},
+		})
+	},
 
   /**
    * 生命周期函数--监听页面加载
@@ -19,6 +33,15 @@ Page({
     this.setData({
       isIpx: app.isIpx
     })
+
+		wx.showNavigationBarLoading()
+		wx.cloud.callFunction({
+			name: 'getResult'
+		}).then(res => {
+			this.setData({
+				healthRecord: res
+			}, wx.hideNavigationBarloading())
+		})
   },
 
   /**
@@ -59,14 +82,8 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: async function () {
-    wx.showNavigationBarLoading()
-		var record=await wx.cloud.callFunction({
-			name:'getResult'
-		})
-		this.setData({
-			healthRecord:record
-		},wx.hideNavigationBarLoading())
+  onReachBottom: function () {
+
   },
 
   /**

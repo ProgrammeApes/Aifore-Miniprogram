@@ -1,20 +1,20 @@
 <!--pages/health/health.wxml-->
 <view class="container {{ isIpx ? 'fit-iphonex' : '' }}">
     <view class='listItem'>
-      <view class='itemContent' wx:for='{{5}}' wx:key='{{index}}'>
+      <navigator class='itemContent' wx:for='{{healthRecord}}' wx:key='{{index}}' url="../healthReport/healthReport">
         <view class='fractionView'>
           <view class='fractionItem'>
             <view class='fractionText'>健康指数</view>
             <view class='fractionBox'>
               <image src='../../static/img/fractionBack.png' class='fractionBack'></image>
-              <view class='fractionNum'>97</view>
+              <view class='fractionNum'>{{item.healthIndex}}</view>
             </view>
           </view>
           <view class='fractionItem'>
             <view class='fractionText'>健康评分</view>
             <view class='fractionBox'>
               <image src='../../static/img/fractionBack.png' class='fractionBack'></image>
-              <view class='fractionNum'>97</view>
+              <view class='fractionNum'>{{item.healthScore}}</view>
             </view>
           </view>
         </view>
@@ -46,10 +46,10 @@
                     <view style='flex:4;'></view>
                   </view>
                   <view class='progressActive' style='width:10%;'>
-                    <text class='BMInum'>9</text>
+                    <text class='BMInum'>20</text>
                     <view class='BMInumSpan'>
                       <image style='width:100%;height:100%;' src='../../static/img/BMInumBox.png'></image>
-                      <view class='BMInumSpanText'>22</view>
+                      <view class='BMInumSpanText'>999</view>
                     </view>
                   </view>
                 </view>
@@ -95,8 +95,8 @@
           </view>
         </view>
         <view class='itemBottom'>测试时间：2018.8.3  8:00</view>
-      </view>
-      <view class="flex-box itemContent add-area">
+      </navigator>
+      <view class="flex-box itemContent add-area" catchtap='jumpToTest'>
         <image src="../../static/img/btn-add.png" class="btn-add" mode="widthFix"></image>
       </view>
     </view>

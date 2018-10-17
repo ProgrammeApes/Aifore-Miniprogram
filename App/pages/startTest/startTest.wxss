@@ -34,12 +34,12 @@
   background: #9ccc65;
   border-radius: 10rpx;
   width: 234rpx;
-  height: 70rpx;
+  height: 80rpx;
   line-height: 70rpx;
   color: #fff;
-  font-size: 27rpx;
+  font-size: 30rpx;
   text-align: center;
-  bottom: 75rpx;
+  bottom: 200rpx;
   left: 50%;
   margin-left: -117rpx;
 }
@@ -49,7 +49,7 @@
   font-size: 24rpx;
   color: #908F8F;
   text-align: center;
-  bottom: 10rpx;
+  bottom: 150rpx;
 }
 .poup-box{
   position: absolute;

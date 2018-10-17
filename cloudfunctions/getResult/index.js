@@ -9,14 +9,10 @@ const db=wx.cloud.database({
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-	var {userInfo:{openId},quantity}=event
-	var record=await db.collection('HealthResult')
+	return await db.collection('HealthResult')
 	.where({
-		_openid:openId
+		_openid:event.userInfo.openId
 	})
-	.orderBy('_data')
-	.limit(quantity+increment)
+	.orderBy('date','desc')
 	.get()
-
-	return record
 }
