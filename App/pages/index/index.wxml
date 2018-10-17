@@ -27,13 +27,13 @@
           <image src="../../static/img/jiankangbaogao.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
           <view class="tab-text">健康报告</view>
         </navigator>
-        <navigator class="tab small-height easy-green" hover-class="none">
+        <navigator class="tab small-height easy-green" hover-class="none" url="../point/point">
           <image src="../../static/img/jifen.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
-          <view class="tab-text">积分</view>
+          <view class="tab-text" >积分</view>
         </navigator>
-        <navigator class="tab small-height deep-green" hover-class="none">
+        <navigator class="tab small-height deep-green" hover-class="none" url="../userInfo/userInfo">
           <image src="../../static/img/gerenxinxi.png" style="width:78rpx; height:78rpx;" mode="aspectFit"></image>
-          <view class="tab-text">个人信息</view>
+          <view class="tab-text" >个人信息</view>
         </navigator>
       </view>
       <view class="right-box" style="flex:1;"></view>
