@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+		healthRecord:[]
   },
 
   /**
@@ -59,8 +59,14 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-  
+  onReachBottom: async function () {
+    wx.showNavigationBarLoading()
+		var record=await wx.cloud.callFunction({
+			name:'getResult'
+		})
+		this.setData({
+			healthRecord:record
+		},wx.hideNavigationBarLoading())
   },
 
   /**
