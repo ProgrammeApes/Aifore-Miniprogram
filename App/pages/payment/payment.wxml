@@ -27,7 +27,7 @@
     <view class="bottom-box">
       <view class="flex-box" style="height:70rpx;">
         <view class="tips">合计</view>
-        <view class="sum">￥{{aCost}}</view>
+        <view class="sum">￥{{aCost+cost}}</view>
       </view>
       <view class="tips-text">注:本产品现制现售，不适用退货服务</view>
     </view>

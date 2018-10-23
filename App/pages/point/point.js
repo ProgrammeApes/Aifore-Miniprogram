@@ -8,5 +8,20 @@ Page({
   onUnload: function () { },
   onPullDownRefresh: function () { },
   onReachBottom: function () { },
-  onShareAppMessage: function () { }
+  onShareAppMessage: function () { },
+  exchange:function () {
+      wx.showModal({
+          title: '提示',
+          content: '您是否要兑换',
+          confirmText: '兑换',
+          cancelText: '放弃',
+          success (res) {
+              if (res.confirm) {
+                  console.log('用户点击兑换')
+              } else if (res.cancel) {
+                  console.log('用户点击放弃')
+              }
+          }
+      })
+  }
 })

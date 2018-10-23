@@ -1,6 +1,6 @@
 <view class="container">
     <scroll-view class="scroller" scroll-y>
-        <view class="coupon-box">
+        <view class="coupon-box" wx:for="{{2}}">
             <view class="left-bar">
                 <view class="dot"></view>
             </view>
@@ -11,9 +11,11 @@
                     <text class="old-price">原价￥11.5</text>
                 </view>
                 <view class="link-box">
-                    <view class="link">查看详情</view>
+                    <navigator url="../couponDetail/couponDetail">
+                        <view class="link">查看详情</view>
+                    </navigator>
                     <text class="link">   |   </text>
-                    <view class="link">立即兑换</view>
+                        <view class="link" bindtap="exchange">立即兑换</view>
                 </view>
             </view>
             <view class="tag">
@@ -30,7 +32,7 @@
     <view class="bottom-bar">
         <view class="point-value">0</view>
         <text id="point">积分</text>
-        <image class="avatar" src="../../static/img/tag.png" ></image>
+        <image class="avatar" src="../../static/img/avatar.png" ></image>
         <text id="user">个人中心</text>
         <image class="arrow" src="../../static/img/black-arrow.png" mode="widthFix" ></image>
     </view>

@@ -1,8 +1,8 @@
 <view class="container">
     <view class="top">
-        <image  class="img"src="../../static/img/userInfo.png" mode="widthFix" ></image>
+        <image  class="img" src="../../static/img/userInfo.png" mode="widthFix" ></image>
         <view class="info">
-            <view class="avatar"><image  mode="widthFix" ></image></view>
+            <image class="avatar" src="../../static/img/avatar.png"  mode="widthFix" ></image>
             <view class="id">草东</view>
         </view>
     </view>

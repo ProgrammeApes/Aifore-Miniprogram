@@ -23,6 +23,7 @@
   width: 120rpx;
   height: 120rpx;
 }
+
 .id{
    position: absolute;
    top: 36%;
@@ -68,6 +69,7 @@
   border-left: #9CCC65 solid 10rpx;
   margin-top: 6rpx;
   height: 30px;
+  line-height: 30px;
 }
 text{
   font: 15px "微软雅黑 Regular" ;
@@ -87,4 +89,7 @@ text{
   right: 26rpx;
   font: 13px "微软雅黑 Regular" ;
   top: 12rpx;
+  vertical-align: middle;
+  color: #6B6B6B;
+  text-align: right;
 }

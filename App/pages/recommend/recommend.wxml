@@ -24,9 +24,9 @@
       </view>
     </view>
     <view class='list main-wrapper'>
-      <view class="right-box scroller" style='background:#f3f5f2;'>
-        <view class='list-item'>
-          <view class="item-content">
+      <scroll-view class="right-box scroller" scroll-y  style='background:#f3f5f2;height:900rpx'>
+        <view class='list-item' wx:for="{{card.prod}}" wx:key>
+          <view class="item-content" >
             <view class="flex-box icon-box">
               <image src="../../static/img/order/new-icon.png" class="icon" mode="widthFix" style="margin-right:4rpx;"></image>
               <image src="../../static/img/order/hot-icon.png" class="icon" mode="widthFix"></image>
@@ -36,23 +36,23 @@
                 <image src="../../static/img/order/cup.png" mode="widthFix" class="shop-img"></image>
               </view>
               <view class="shop-mes">
-                <view class="shop-name">红豆花生红茶</view>
-                <view class="price-box">￥14/12</view>
+                <view class="shop-name">{{card.prod[index]}}</view>
+                <view class="price-box">￥{{card.s$[index]}}/{{card.b$[index]}}</view>
                 <view class="step-box">
                   <view class="flex-box tips-box">
-                    <view class="tips">大杯</view>
+                    <view class="tips">小杯</view>
                     <view class="flex-box stepper">
-                      <view class="btn btn-min">-</view>
-                      <view class="value">12</view>
-                      <view class="btn btn-add">+</view>
+                      <view class="btn btn-min" bindtap='smallMin' data-id="{{currentTab}}" data-idx="{{index}}">-</view>
+                      <view class="value">{{card.sNum[index]}}</view>
+                      <view class="btn btn-add"bindtap='smallAdd' data-id="{{currentTab}}" data-idx="{{index}}">+</view>
                     </view>
                   </view>
                   <view class="flex-box tips-box">
                     <view class="tips">大杯</view>
                     <view class="flex-box stepper">
-                      <view class="btn btn-min">-</view>
-                      <view class="value">12</view>
-                      <view class="btn btn-add">+</view>
+                      <view class="btn btn-min" bindtap='bigMin' data-idx="{{index}}">-</view>
+                      <view class="value">{{card.bNum[index]}}</view>
+                      <view class="btn btn-add" bindtap='bigAdd' data-idx="{{index}}">+</view>
                     </view>
                   </view>
                 </view>
@@ -65,12 +65,13 @@
             <view class='bottom-reason'>膳食纤维·调节血糖·减肥健美·温养脾胃滋养调气·增强记忆·清咽止咳</view>
           </view>
         </view>
-      </view>
+      </scroll-view>
     </view>
   </view>
+
   <view class="bottom-box">
-    <view class="price-bar">一共<text>2</text>份 共<text>199</text>元</view>
-    <navigator class='confirmOrder' hover-class='none' url="../payment/payment">
+    <view class="price-bar">一共<text>{{count}}</text>份 共<text>{{cost}}</text>元</view>
+    <navigator class='confirmOrder' hover-class='none' url="../payment/payment" bindtap="order">
       下单
     </navigator>
   </view>
@@ -100,6 +101,6 @@
   </view>
   <view class='confirmBtn'  catchtap='handleSelect'>完成</view>
   <view class='viewCenter'>
-      <image src='../../static/img/xiala2.png' class='xiala2'></image>
+      <image src='../../static/img/xiala2.png' class='xiala2' ></image>
     </view>
 </view>

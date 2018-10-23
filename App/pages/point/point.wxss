@@ -99,7 +99,7 @@
   text-align: center;
   background: #FFFFFF;
   height: 100rpx;
-  border-top: #7D7D7D solid 1rpx;
+  border-top: #535353 solid 1rpx;
   border-radius: 10rpx 10rpx 0 0 ;
   display: flex;
   line-height: 100rpx;
