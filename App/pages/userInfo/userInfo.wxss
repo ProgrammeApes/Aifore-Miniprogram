@@ -58,6 +58,7 @@
   justify-content: center;
   border-bottom: #EAEAE8 6rpx solid;
   height: 70rpx;
+  line-height: 70rpx;
 }
 .title{
   position: absolute;
@@ -93,3 +94,15 @@ text{
   color: #6B6B6B;
   text-align: right;
 }
+input{
+  position: absolute;
+  right: 60rpx;
+  font: 13px "微软雅黑 Regular" ;
+  top: 2rpx;
+  vertical-align: middle;
+  color: #6B6B6B;
+  text-align: right;
+
+
+}
+

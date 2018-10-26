@@ -45,5 +45,5 @@
       </view>
     </view>
   </scroll-view>
-  <view class="btn-use">立即兑换</view>
+  <view class="btn-use" bindtap="exchange">立即兑换</view>
 </view>

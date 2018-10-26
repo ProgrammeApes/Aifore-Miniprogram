@@ -1,5 +1,19 @@
 Page({
   data: {
+      coupon:[
+          {
+              name:"金桔柠檬",
+              oldPrice: 15,
+              price: 12,
+              point: 45,
+          },
+          {
+              name:"芝士奶盖",
+              oldPrice: 17,
+              price: 12,
+              point: 55,
+          }
+      ]
   },
   onLoad: function (options) { },
   onReady: function () { },

@@ -7,79 +7,90 @@
         </view>
     </view>
     <view class="index">
-        <view class="bodyIndex">
-            <view class="item">
-                <view class="title">身体指标</view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>性别</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+        <form>
+            <view class="bodyIndex">
+                <view class="item">
+                    <view class="title">身体指标</view>
                 </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>身高</text>
-                    <text id="value">175 cm</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                <view class="item">
+                    <view class="a">
+                        <text>性别</text>
+                        <input name="sex" type="text" data-id="sex" value="男"  bindblur="blur" />
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
                 </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>体重</text>
-                    <text id="value">70 kg</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                <view class="item">
+                    <view class="a">
+                        <text>身高</text>
+                        <input type="text" value="175 " data-id="height"   bindblur="blur"/>
+                        <text id="value">cm</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
                 </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>年龄</text>
-                    <text id="value">21</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                <view class="item">
+                    <view class="a">
+                        <text>体重</text>
+                        <input type="text" value="70 " data-id="weight"   bindblur="blur"/>
+                        <text id="value">kg</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
                 </view>
-            </view>
+                <view class="item">
+                    <view class="a">
+                        <text>年龄</text>
+                        <input type="text" value="21 " data-id="age"   bindblur="blur"/>
+                        <text id="value">岁</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
+                </view>
 
-        </view>
-        <view class="examIndex">
-            <view class="item">
-                <view class="title">体检指标</view>
             </view>
-            <view class="item">
-                <view class="a">
-                    <text>血压</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+            <view class="examIndex">
+                <view class="item">
+                    <view class="title">体检指标</view>
+                </view>
+                <view class="item">
+                    <view class="a">
+                        <text>血压</text>
+                        <input type="text" value="70 " data-id="blood_pressure"   bindblur="blur"/>
+                        <text id="value">k</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="a">
+                        <text>胆固醇</text>
+                        <input type="text" value="70 " data-id="cholesterin"   bindblur="blur"/>
+                        <text id="value">kg</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="a">
+                        <text>甘油三酯</text>
+                        <input type="text" value="70 " data-id="acid_lipid"   bindblur="blur"/>
+                        <text id="value">kg</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="a">
+                        <text>蛋白质</text>
+                        <input type="text" value="70 " data-id="protein"   bindblur="blur"/>
+                        <text id="value">kg</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
+                </view>
+                <view class="item">
+                    <view class="a">
+                        <text>空腹血糖</text>
+                        <input type="text" value="70 " data-id="blood_sugar"   bindblur="blur"/>
+                        <text id="value">kg</text>
+                        <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
+                    </view>
                 </view>
             </view>
-            <view class="item">
-                <view class="a">
-                    <text>胆固醇</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
-                </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>甘油三酯</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
-                </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>蛋白质</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
-                </view>
-            </view>
-            <view class="item">
-                <view class="a">
-                    <text>空腹血糖</text>
-                    <text id="value">男</text>
-                    <image  class="arrow"src="../../static/img/arrow.png" mode="widthFix" ></image>
-                </view>
-            </view>
-        </view>
+        </form>
     </view>
+
 </view>

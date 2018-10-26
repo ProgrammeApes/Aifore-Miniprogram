@@ -1,14 +1,14 @@
 <view class="container">
     <scroll-view class="scroller" scroll-y>
-        <view class="coupon-box" wx:for="{{2}}">
+        <view class="coupon-box" wx:for="{{coupon}}" wx:key>
             <view class="left-bar">
                 <view class="dot"></view>
             </view>
             <view class="coupon-text">
-                <view class="coupon-title">金桔柠檬（1杯）</view>
+                <view class="coupon-title">{{coupon[index].name}}</view>
                 <view class="coupon-price">
-                    <text class="price">￥11.5</text>
-                    <text class="old-price">原价￥11.5</text>
+                    <text class="price">￥{{coupon[index].price}}</text>
+                    <text class="old-price">原价￥{{coupon[index].oldPrice}}</text>
                 </view>
                 <view class="link-box">
                     <navigator url="../couponDetail/couponDetail">
@@ -21,7 +21,7 @@
             <view class="tag">
                 <image src="../../static/img/tag.png" mode="widthFix"></image>
                 <view class="text">
-                    <view class="point">45</view>
+                    <view class="point">{{coupon[index].point}}</view>
                     <view>积分</view>
                 </view>
             </view>
@@ -32,8 +32,10 @@
     <view class="bottom-bar">
         <view class="point-value">0</view>
         <text id="point">积分</text>
-        <image class="avatar" src="../../static/img/avatar.png" ></image>
-        <text id="user">个人中心</text>
+        <navigator url="../vip/vip" hover-class='none'>
+            <image class="avatar" src="../../static/img/avatar.png" ></image>
+           <text id="user">个人中心</text>
+        </navigator>
         <image class="arrow" src="../../static/img/black-arrow.png" mode="widthFix" ></image>
     </view>
 </view>
