@@ -27,7 +27,7 @@
           <image src="../../static/img/order/hot-icon.png" class="icon" mode="widthFix"></image>
         </view>
         <view class="flex-box ware-content">
-          <image src="../../static/img/order/cup.png" mode="widthFix" class="shop-img"></image>
+          <image src='{{array[currentTab].cupImage[index]}}' mode="widthFix" class="shop-img"></image>
           <view class="shop-mes">
             <view class="shop-name">{{item}}</view>
             <view class="price-box">￥{{array[currentTab].b$[index]}}/{{array[currentTab].s$[index]}}</view>
